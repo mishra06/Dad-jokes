@@ -4,6 +4,7 @@ button.addEventListener('click', clickModular);
 
 let p = document.querySelector("#jokes");
 
+const audio = new Audio("./door.mp3");
 function clickModular(){
     let joke = " ";
 
@@ -26,4 +27,9 @@ function clickModular(){
             button.innerText = "Tell Me A Joke";
         }
     };
+    call();
+}
+
+function call(){
+    audio.play();
 }
