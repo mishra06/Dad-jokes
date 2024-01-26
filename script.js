@@ -14,6 +14,7 @@ function clickModular(){
     xhr.send();
 
     button.innerText = "Fetching jokes...";
+    p.innerText = "loading....!!!";
 
     xhr.onload = function(){
         if(xhr.status === 200){
